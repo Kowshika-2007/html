@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Advertisement</title>
+</head>
+
+<body bgcolor="#d6ecfa">
+
+    <center>
+
+        <h1 style="color:#d81b60;">
+        </h1>
+
+        <h1>
+            <u><font color="blue">ADVERTISEMENT</font></u>
+        </h1>
+
+        <!-- Mobile Image -->
+        <img src="s25.jpg" alt="Samsung Galaxy S25" width="260" height="300">
+
+        <h1 style="color:brown;">Samsung Galaxy S25</h1>
+
+        <h2>
+            Original Price:
+            <strike>₹79,999</strike>
+        </h2>
+
+        <h2>
+            Offer Price:
+            <font color="purple">₹69,999</font>
+        </h2>
+
+        <h2>
+            Discount:
+            <font color="purple">12% OFF</font>
+        </h2>
+
+        <h2>Free Gifts:</h2>
+
+        <h3 style="color:purple;">
+            ✔ Wireless Earbuds<br>
+            ✔ Mobile Back Cover<br>
+            ✔ Screen Protector
+        </h3>
+
+        <hr>
+
+        <h1 style="color:green;">
+            Offer Valid Till: 31 July 2026
+        </h1>
+
+        <h2>Chennai Mobiles</h2>
+
+        <h3>
+            No.25, Anna Salai,<br>
+            Chennai - 600002<br>
+            Phone: 9876543210
+        </h3>
+
+    </center>
+
+</body>
+</html>
