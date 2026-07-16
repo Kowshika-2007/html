@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programming Languages</title>
+</head>
+
+<frameset rows="20%,80%" border="2">
+    <frame src="header.html" name="header" scrolling="no">
+
+    <frameset cols="25%,75%">
+        <frame src="menu.html" name="menu">
+        <frame src="home.html" name="content">
+    </frameset>
+
+</frameset>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin:0;
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+}
+h1{
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<h1> </h1>
+<h3>"Learn Coding, Build the Future"</h3>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background:#d9ecff;
+    font-family:Arial;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    color:black;
+    font-size:22px;
+    display:block;
+    padding:12px;
+}
+a:hover{
+    background:#87cefa;
+}
+</style>
+</head>
+<body>
+
+<h2>MENU</h2>
+<hr>
+
+<a href="home.html" target="content">Home</a>
+<a href="python.html" target="content">Python</a>
+<a href="java.html" target="content">Java</a>
+<a href="gallery.html" target="content">Gallery</a>
+<a href="quiz.html" target="content">Quiz</a>
+<a href="contact.html" target="content">Contact</a>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+}
+img{
+    width:250px;
+    height:250px;
+}
+button{
+    padding:8px 15px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Welcome</h1>
+
+<p>Programming languages help us create websites, apps, games, and software.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
+
+<h2>Language of the Day</h2>
+
+<h3>Python</h3>
+
+<p>"Simple, Powerful and Easy to Learn."</p>
+
+<button onclick="document.getElementById('date').innerHTML=Date()">Show Today's Date</button>
+
+<p id="date"></p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-family:Arial;">
+<h1>Python</h1>
+<p>Python is a beginner-friendly programming language used in AI, Web Development, and Data Science.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-family:Arial;">
+<h1>Java</h1>
+<p>Java is a platform-independent language widely used for enterprise and Android applications.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-family:Arial;">
+<h1>Programming Quiz</h1>
+<p>Test your coding knowledge.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-family:Arial;">
+<h1>Contact</h1>
+<p>Email: coding@example.com</p>
+</body>
+</html>
