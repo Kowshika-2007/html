@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quiz Login</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:#ffd6e7;
+            font-family:Arial, sans-serif;
+        }
+
+        .container{
+            width:600px;
+            margin:80px auto;
+            background:#ffeaf4;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 0 15px gray;
+        }
+
+        h1{
+            text-align:center;
+            font-size:45px;
+        }
+
+        h2{
+            margin-top:30px;
+        }
+
+        input{
+            width:250px;
+            padding:10px;
+            margin:10px 0;
+            border:1px solid gray;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        button{
+            background:green;
+            color:white;
+            border:none;
+            padding:12px 30px;
+            font-size:18px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1> </h1>
+
+<h2>Login Here</h2>
+
+<form onsubmit="login(); return false;">
+
+<input type="text" id="user" placeholder="Enter Username"><br>
+
+<input type="password" id="pass" placeholder="Enter Password"><br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+<script>
+function login(){
+
+var username=document.getElementById("user").value;
+
+if(username=="")
+{
+alert("Please Enter Username");
+}
+else
+{
+alert("Welcome " + username + "!\nLogin Successful.");
+}
+}
+</script>
+
+</body>
+</html>
