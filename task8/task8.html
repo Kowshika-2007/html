@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quiz Login</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:#ffd6e7;
+            font-family:Arial,sans-serif;
+        }
+
+        .container{
+            width:700px;
+            margin:50px auto;
+            background:#ffeaf4;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 0 15px gray;
+        }
+
+        h1{
+            text-align:center;
+            font-size:40px;
+        }
+
+        h2{
+            margin-top:20px;
+        }
+
+        input[type=text],
+        input[type=password]{
+            width:300px;
+            padding:10px;
+            margin:10px 0;
+            font-size:16px;
+            border-radius:5px;
+            border:1px solid gray;
+        }
+
+        button{
+            background:green;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            font-size:18px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkgreen;
+        }
+
+        .question{
+            margin-top:20px;
+            font-size:18px;
+        }
+
+        #quizPage{
+            display:none;
+        }
+
+        #result{
+            margin-top:20px;
+            font-size:22px;
+            color:blue;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Login Section -->
+    <div id="loginPage">
+
+        <h1>Online Quiz</h1>
+
+        <h2>Login Here</h2>
+
+        <form onsubmit="login(); return false;">
+
+            <input type="text" id="user" placeholder="Enter Username"><br>
+
+            <input type="password" id="pass" placeholder="Enter Password"><br><br>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizPage">
+
+        <h1>General Knowledge Quiz</h1>
+
+        <h2 id="welcome"></h2>
+
+        <form id="quizForm">
+
+            <div class="question">
+                <b>1. What is the capital of India?</b><br><br>
+
+                <input type="radio" name="q1" value="A"> Chennai<br>
+                <input type="radio" name="q1" value="B"> Mumbai<br>
+                <input type="radio" name="q1" value="C"> New Delhi<br>
+                <input type="radio" name="q1" value="D"> Kolkata
+            </div>
+
+            <div class="question">
+                <b>2. Which planet is known as the Red Planet?</b><br><br>
+
+                <input type="radio" name="q2" value="A"> Earth<br>
+                <input type="radio" name="q2" value="B"> Mars<br>
+                <input type="radio" name="q2" value="C"> Venus<br>
+                <input type="radio" name="q2" value="D"> Jupiter
+            </div>
+
+            <div class="question">
+                <b>3. Which is the largest ocean in the world?</b><br><br>
+
+                <input type="radio" name="q3" value="A"> Atlantic Ocean<br>
+                <input type="radio" name="q3" value="B"> Indian Ocean<br>
+                <input type="radio" name="q3" value="C"> Pacific Ocean<br>
+                <input type="radio" name="q3" value="D"> Arctic Ocean
+            </div>
+
+            <div class="question">
+                <b>4. How many days are there in a leap year?</b><br><br>
+
+                <input type="radio" name="q4" value="A"> 365<br>
+                <input type="radio" name="q4" value="B"> 364<br>
+                <input type="radio" name="q4" value="C"> 366<br>
+                <input type="radio" name="q4" value="D"> 367
+            </div>
+
+            <div class="question">
+                <b>5. Which is the national bird of India?</b><br><br>
+
+                <input type="radio" name="q5" value="A"> Crow<br>
+                <input type="radio" name="q5" value="B"> Peacock<br>
+                <input type="radio" name="q5" value="C"> Parrot<br>
+                <input type="radio" name="q5" value="D"> Sparrow
+            </div>
+
+            <br>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<script>
+
+function login(){
+
+    var username=document.getElementById("user").value;
+    var password=document.getElementById("pass").value;
+
+    if(username==""){
+        alert("Please Enter Username");
+        return;
+    }
+
+    if(password==""){
+        alert("Please Enter Password");
+        return;
+    }
+
+    document.getElementById("loginPage").style.display="none";
+    document.getElementById("quizPage").style.display="block";
+
+    document.getElementById("welcome").innerHTML="Welcome, "+username;
+}
+
+function submitQuiz(){
+
+    var score=0;
+
+    if(document.querySelector('input[name="q1"]:checked')?.value=="C")
+        score++;
+
+    if(document.querySelector('input[name="q2"]:checked')?.value=="B")
+        score++;
+
+    if(document.querySelector('input[name="q3"]:checked')?.value=="C")
+        score++;
+
+    if(document.querySelector('input[name="q4"]:checked')?.value=="C")
+        score++;
+
+    if(document.querySelector('input[name="q5"]:checked')?.value=="B")
+        score++;
+
+    document.getElementById("result").innerHTML=
+    "<h2>Your Score: "+score+" / 5</h2>";
+
+    if(score==5){
+        document.getElementById("result").innerHTML +=
+        "<h3>Excellent! </h3>";
+    }
+    else if(score>=3){
+        document.getElementById("result").innerHTML +=
+        "<h3>Good Job! </h3>";
+    }
+    else{
+        document.getElementById("result").innerHTML +=
+        "<h3>Keep Practicing! </h3>";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
