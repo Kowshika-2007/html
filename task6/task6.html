@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Latest Technologies</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+}
+
+.header{
+background:darkblue;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.container{
+display:flex;
+}
+
+.menu{
+width:250px;
+background:lightblue;
+height:600px;
+padding-top:20px;
+text-align:center;
+}
+
+.menu a{
+display:block;
+text-decoration:none;
+color:black;
+padding:15px;
+font-size:20px;
+}
+
+.menu a:hover{
+background:white;
+}
+
+.content{
+flex:1;
+text-align:center;
+padding:20px;
+}
+
+img{
+width:250px;
+height:250px;
+}
+
+button{
+padding:10px 20px;
+font-size:16px;
+}
+</style>
+
+<script>
+function showDate()
+{
+document.getElementById("date").innerHTML = new Date().toDateString();
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1> LATEST TECHNOLOGIES</h1>
+<h3>"Innovating the Future"</h3>
+</div>
+
+<div class="container">
+
+<div class="menu">
+<h2>MENU</h2>
+<hr>
+<a href="#">Home</a>
+<a href="#">AI</a>
+<a href="#">Cloud Computing</a>
+<a href="#">Cyber Security</a>
+<a href="#">Robotics</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="content">
+
+<h2>Welcome</h2>
+
+<p>Technology makes our life easier and smarter.</p>
+
+<img src="C:\Users\ELCOT\OneDrive\Desktop\task6\robot.jpg" width="250" height="250">
+
+<h2>Technology of the Day</h2>
+
+<b>Artificial Intelligence (AI)</b>
+
+<p>"Technology changes the world."</p>
+
+<button onclick="showDate()">Show Today's Date</button>
+
+<p id="date"></p>
+
+</div>
+
+</div>
+
+</body>
+</html>
