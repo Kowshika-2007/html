@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Forms</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Forms Tutorial</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="tags.html">HTML Tags</a>
+    <a href="forms.html">Forms</a>
+    <a href="tables.html">Tables</a>
+    <a href="images.html">Images</a>
+</nav>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h3>Form Topics</h3>
+
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#text">Text Box</a></li>
+<li><a href="#password">Password</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#radio">Radio Button</a></li>
+<li><a href="#checkbox">Checkbox</a></li>
+<li><a href="#select">Drop Down List</a></li>
+<li><a href="#textarea">Textarea</a></li>
+<li><a href="#buttons">Buttons</a></li>
+</ul>
+
+</div>
+
+<div class="content">
+
+<h2 id="intro">HTML Forms</h2>
+
+<p>
+HTML Forms are used to collect user input.
+The <b>&lt;form&gt;</b> tag is used to create a form.
+</p>
+
+<pre>
+&lt;form&gt;
+
+Form Elements
+
+&lt;/form&gt;
+</pre>
+
+<hr>
+
+<h2 id="text">1. Text Box</h2>
+
+<pre>
+&lt;input type="text"&gt;
+</pre>
+
+<input type="text" placeholder="Enter your name">
+
+<hr>
+
+<h2 id="password">2. Password Field</h2>
+
+<pre>
+&lt;input type="password"&gt;
+</pre>
+
+<input type="password" placeholder="Enter Password">
+
+<hr>
+
+<h2 id="email">3. Email Field</h2>
+
+<pre>
+&lt;input type="email"&gt;
+</pre>
+
+<input type="email" placeholder="Enter Email">
+
+<hr>
+
+<h2 id="radio">4. Radio Button</h2>
+
+<pre>
+&lt;input type="radio"&gt; Male
+&lt;input type="radio"&gt; Female
+</pre>
+
+<input type="radio" name="gender"> Male
+<br>
+<input type="radio" name="gender"> Female
+
+<hr>
+
+<h2 id="checkbox">5. Check Box</h2>
+
+<pre>
+&lt;input type="checkbox"&gt; HTML
+&lt;input type="checkbox"&gt; CSS
+&lt;input type="checkbox"&gt; JavaScript
+</pre>
+
+<input type="checkbox"> HTML
+<br>
+<input type="checkbox"> CSS
+<br>
+<input type="checkbox"> JavaScript
+
+<hr>
+
+<h2 id="select">6. Select (Drop Down)</h2>
+
+<pre>
+&lt;select&gt;
+&lt;option&gt;HTML&lt;/option&gt;
+&lt;option&gt;CSS&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+<select>
+
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+<option>PHP</option>
+
+</select>
+
+<hr>
+
+<h2 id="textarea">7. Textarea</h2>
+
+<pre>
+&lt;textarea&gt;&lt;/textarea&gt;
+</pre>
+
+<textarea rows="5" cols="50"
+placeholder="Enter your comments"></textarea>
+
+<hr>
+
+<h2 id="buttons">8. Buttons</h2>
+
+<pre>
+&lt;input type="submit"&gt;
+&lt;input type="reset"&gt;
+</pre>
+
+<form>
+
+<label>Name</label><br>
+<input type="text" required><br><br>
+
+<label>Email</label><br>
+<input type="email" required><br><br>
+
+<label>Course</label><br>
+
+<select required>
+<option>Select</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</form>
+
+<hr>
+
+<h2>Complete Form Example</h2>
+
+<form>
+
+<label>Name</label><br>
+<input type="text"><br><br>
+
+<label>Email</label><br>
+<input type="email"><br><br>
+
+<label>Password</label><br>
+<input type="password"><br><br>
+
+<label>Gender</label><br>
+
+<input type="radio" name="g"> Male
+
+<input type="radio" name="g"> Female
+
+<br><br>
+
+<label>Course</label><br>
+
+<select>
+
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+
+</select>
+
+<br><br>
+
+<label>Comments</label><br>
+
+<textarea rows="5"></textarea>
+
+<br><br>
+
+<input type="submit" value="Register">
+
+<input type="reset" value="Clear">
+
+</form>
+
+<hr>
+
+<h2>Summary</h2>
+
+<ul>
+
+<li>Text Box</li>
+
+<li>Password Field</li>
+
+<li>Email Field</li>
+
+<li>Radio Button</li>
+
+<li>Check Box</li>
+
+<li>Drop Down List</li>
+
+<li>Textarea</li>
+
+<li>Submit Button</li>
+
+<li>Reset Button</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 HTML Tutorial Website</p>
+
+</footer>
+
+</body>
+</html>

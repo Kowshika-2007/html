@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Images</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Images Tutorial</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="tags.html">HTML Tags</a>
+    <a href="forms.html">Forms</a>
+    <a href="tables.html">Tables</a>
+    <a href="images.html">Images</a>
+</nav>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h3>Image Topics</h3>
+
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#imgtag">Image Tag</a></li>
+<li><a href="#attributes">Image Attributes</a></li>
+<li><a href="#local">Local Image</a></li>
+<li><a href="#online">Online Image</a></li>
+<li><a href="#linkimage">Clickable Image</a></li>
+<li><a href="#size">Image Size</a></li>
+</ul>
+
+</div>
+
+<div class="content">
+
+<h2 id="intro">HTML Images Introduction</h2>
+
+<p>
+Images make web pages more attractive and informative.
+HTML uses the <b>&lt;img&gt;</b> tag to display images.
+</p>
+
+<pre>
+&lt;img src="image.jpg" alt="Image"&gt;
+</pre>
+
+<hr>
+
+<h2 id="imgtag">Image Tag</h2>
+
+<p>The basic syntax is:</p>
+
+<pre>
+&lt;img src="flower.jpg" alt="Flower"&gt;
+</pre>
+
+<p>
+The <b>src</b> attribute specifies the image location, and
+<b>alt</b> displays alternate text if the image cannot be loaded.
+</p>
+
+<hr>
+
+<h2 id="attributes">Image Attributes</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>src</td>
+<td>Image Path</td>
+</tr>
+
+<tr>
+<td>alt</td>
+<td>Alternative Text</td>
+</tr>
+
+<tr>
+<td>width</td>
+<td>Image Width</td>
+</tr>
+
+<tr>
+<td>height</td>
+<td>Image Height</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="local">Local Image</h2>
+
+<pre>
+&lt;img src="flower.jpg"
+width="300"
+height="200"
+alt="Flower"&gt;
+</pre>
+
+<p>
+If <b>flower.jpg</b> is in the same folder as your HTML file,
+the image will be displayed.
+</p>
+
+<img src="flower.jpg"
+alt="Flower Image"
+width="300"
+height="200">
+
+<hr>
+
+<h2 id="online">Online Image</h2>
+
+<pre>
+&lt;img src="https://via.placeholder.com/300x200"
+alt="Sample Image"&gt;
+</pre>
+
+<img src="https://via.placeholder.com/300x200"
+alt="Online Image">
+
+<hr>
+
+<h2 id="linkimage">Clickable Image</h2>
+
+<pre>
+&lt;a href="https://www.google.com"&gt;
+&lt;img src="flower.jpg"&gt;
+&lt;/a&gt;
+</pre>
+
+<a href="https://www.google.com" target="_blank">
+<img src="https://via.placeholder.com/200x120"
+alt="Clickable Image">
+</a>
+
+<p>
+Click the image to open Google.
+</p>
+
+<hr>
+
+<h2 id="size">Image Size</h2>
+
+<p>Small Image</p>
+
+<img src="https://via.placeholder.com/100"
+alt="Small Image">
+
+<br><br>
+
+<p>Medium Image</p>
+
+<img src="https://via.placeholder.com/200"
+alt="Medium Image">
+
+<br><br>
+
+<p>Large Image</p>
+
+<img src="https://via.placeholder.com/300"
+alt="Large Image">
+
+<hr>
+
+<h2>Complete Example</h2>
+
+<pre>
+&lt;img src="nature.jpg"
+alt="Nature"
+width="400"
+height="250"&gt;
+</pre>
+
+<p>
+Save an image named <b>nature.jpg</b> inside your project folder to display it.
+</p>
+
+<hr>
+
+<h2>Summary</h2>
+
+<ul>
+<li>HTML Image Tag</li>
+<li>src Attribute</li>
+<li>alt Attribute</li>
+<li>width Attribute</li>
+<li>height Attribute</li>
+<li>Local Images</li>
+<li>Online Images</li>
+<li>Clickable Images</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 HTML Tutorial Website | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

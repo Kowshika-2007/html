@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Tables</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Tables Tutorial</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="tags.html">HTML Tags</a>
+    <a href="forms.html">Forms</a>
+    <a href="tables.html">Tables</a>
+    <a href="images.html">Images</a>
+</nav>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h3>Table Topics</h3>
+
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#elements">Table Elements</a></li>
+<li><a href="#simple">Simple Table</a></li>
+<li><a href="#border">Border Table</a></li>
+<li><a href="#caption">Table Caption</a></li>
+<li><a href="#colspan">Colspan</a></li>
+<li><a href="#rowspan">Rowspan</a></li>
+</ul>
+
+</div>
+
+<div class="content">
+
+<h2 id="intro">HTML Table Introduction</h2>
+
+<p>
+HTML tables are used to display data in rows and columns.
+The <b>&lt;table&gt;</b> tag is used to create a table.
+</p>
+
+<pre>
+&lt;table&gt;
+&lt;/table&gt;
+</pre>
+
+<hr>
+
+<h2 id="elements">Table Elements</h2>
+
+<ul>
+<li>&lt;table&gt; - Creates a table</li>
+<li>&lt;tr&gt; - Table Row</li>
+<li>&lt;th&gt; - Table Heading</li>
+<li>&lt;td&gt; - Table Data</li>
+<li>&lt;caption&gt; - Table Title</li>
+</ul>
+
+<hr>
+
+<h2 id="simple">Simple Table</h2>
+
+<pre>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+
+<tr>
+<td>John</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Priya</td>
+<td>22</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="border">Student Table</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>Roll No</th>
+<th>Name</th>
+<th>Course</th>
+<th>City</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Arun</td>
+<td>HTML</td>
+<td>Chennai</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Divya</td>
+<td>CSS</td>
+<td>Madurai</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Rahul</td>
+<td>JavaScript</td>
+<td>Coimbatore</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="caption">Table Caption</h2>
+
+<pre>
+&lt;caption&gt;Student Details&lt;/caption&gt;
+</pre>
+
+<table border="1" cellpadding="10">
+
+<caption><b>Student Details</b></caption>
+
+<tr>
+<th>Name</th>
+<th>Course</th>
+</tr>
+
+<tr>
+<td>Kumar</td>
+<td>HTML</td>
+</tr>
+
+<tr>
+<td>Anitha</td>
+<td>CSS</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="colspan">Colspan Example</h2>
+
+<pre>
+&lt;td colspan="2"&gt;
+</pre>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th colspan="2">
+Student Information
+</th>
+</tr>
+
+<tr>
+<td>Name</td>
+<td>Vijay</td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td>HTML</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="rowspan">Rowspan Example</h2>
+
+<pre>
+&lt;td rowspan="2"&gt;
+</pre>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>Name</th>
+<th>Subject</th>
+</tr>
+
+<tr>
+<td rowspan="2">Meena</td>
+<td>HTML</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>Complete Student Table</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+<th>Marks</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Arun</td>
+<td>HTML</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Divya</td>
+<td>CSS</td>
+<td>90</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Rahul</td>
+<td>JavaScript</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Priya</td>
+<td>PHP</td>
+<td>93</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>Summary</h2>
+
+<ul>
+<li>HTML Table</li>
+<li>Table Row (&lt;tr&gt;)</li>
+<li>Table Heading (&lt;th&gt;)</li>
+<li>Table Data (&lt;td&gt;)</li>
+<li>Table Caption</li>
+<li>Colspan</li>
+<li>Rowspan</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 HTML Tutorial Website</p>
+
+</footer>
+
+</body>
+</html>
